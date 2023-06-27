@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Battery Finder Program</title>
+    <h1 class="bg-primary text-center">Battery Finder Program</h1>
+  </head>
+  <body>
+    <div class="my-4 py-4" id="brandPart">
+      <div>
+        <a>Step1: Select a Brand</a>
+      </div>
+      <select
+        class="form-select bg-info text-white"
+        id="brandSelectMenu"
+      ></select>
+    </div>
+    <div class="my-4 py-4" id="modelPart">
+      <div>
+        <a>Step2: Select a Model</a>
+      </div>
+      <select
+        class="form-select bg-info text-white"
+        id="modelSelectMenu"
+      ></select>
+    </div>
+    <form>
+      <div class="form-group my-5 py-5">
+        <label class="text-white" for="inputdefault"></label>
+          Step3: Input Accessory Power Consumption
+        </label>
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <input
+              type="text"
+              id="inputdefault"
+              class="form-control mt-2"
+              aria-describedby="passwordHelpInline"
+            />
+          </div>
+          <div>
+            <span id="passwordHelpInline" class="form-text"> W </span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="my-5 py-5">
+      <a id="batteriesMenu"> Step4: Choose battery </a>
+      <div class="font-weight-aold bg-info col-5" id="batteriesTable"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
